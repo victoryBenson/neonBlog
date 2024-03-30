@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --background: #e5e7eb;
+  --text-primary: #000000;
+  --text-secondary: #f4ebe2;
+  --accent: #44403c;
+  --form-bg: #fff;
+  --button-bg: #EC094D;
+}
+
+[data-theme = 'dark'] {
+  --text-primary: #e5e7eb;
+  --background: #000000;
+  --text-secondary: #f4ebe2;
+  --accent: #44403c;
+  --form-bg: #fff;
+  --button-bg: #EC094D;
+}
+
+.submit {
+  background-color: var(--button-bg);
+  color: var(--text-secondary)
+}
+
+.sign{
+  color: var(--accent)
+}
+
+table, td, th {
+  border: 1px solid #44403c;
+  padding: .5rem;
+
+}
+
+ /*No scrollBar?. add the code bellow */
+@layer utilities {
+    @variants responsive {
+      /* Hide scrollbar for Chrome, Safari and Opera */
+      .no-scrollbar::-webkit-scrollbar {
+          display: none;
+      }
+
+      /* Hide scrollbar for IE, Edge and Firefox */
+      .no-scrollbar {
+          -ms-overflow-style: none;  /* IE and Edge */
+          scrollbar-width: none;  /* Firefox */
+      }
+    }
+  }
+
+  
+  .slideshowSlider {
+    transition: ease 1000ms;
+  }
+
+  /* Buttons */
+.slideshowDot {
+  cursor: pointer;
+  margin: 15px 7px 0px;
+}
+
+.slideshowDot.active {
+  background-color: #EC094D;
+}
+
