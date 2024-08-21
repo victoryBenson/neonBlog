@@ -12,7 +12,7 @@ export const Footer = () => {
         window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
       };
   return (
-    <div className='bg-stone-200/30'>
+    <div className='bg-stone-200 px-5'>
         <div className='grid md:grid-cols-3 grid-cols-1 p-3 gap-8'>
             {/* News letter */}
             <div>
