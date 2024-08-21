@@ -5,6 +5,7 @@ import { Routes, Route,BrowserRouter as Router } from 'react-router-dom'
 import { MaybeShowNavBar } from './Components/MaybeShowNavBar/MaybeShowNavBar'
 import { Write } from './Pages/Write'
 import { ProtectedRoute } from './Components/ProtectedRoute'
+import NotFound from './Components/404'
 
 function App() {
  
@@ -24,6 +25,7 @@ function App() {
         <Route path='/signup' element={<SignUp />} />
         <Route path='/membership' element={<Membership/>} />
         <Route path='/blog/:id' element={<Blog/>}/>
+        <Route path='*' element={<NotFound/>}/>
       </Routes>
       <MaybeShowNavBar>
         <Footer/>

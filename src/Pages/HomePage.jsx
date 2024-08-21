@@ -4,14 +4,15 @@ import {PageDetails} from '../Components/PageDetails'
 import { TopNav } from './TopNav'
 import { Aside } from './Aside'
 import { Footer } from './Footer'
+import Wrapper from '../Components/Wrapper'
 
 export const HomePage = () => {
   return (
-    <div>
+    <Wrapper>
         {/* <TopNav/> */}
         <HomeSlide/>
         <PageDetails/>    
         {/* <Footer/> */}
-    </div>
+    </Wrapper>
   )
 }
